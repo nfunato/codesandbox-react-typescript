@@ -25,7 +25,12 @@ export const App = () => {
       {todos.map((todo, i) => (
         // fix typo: userid -> userId
         // add key prop by nf (it could be todo.id instead of i)
-        <Todo key={i} title={todo.title} userid={todo.userId} />
+        <Todo
+          key={i}
+          title={todo.title}
+          userId={todo.userId}
+          completed={todo.completed}
+        />
       ))}
     </div>
   );
