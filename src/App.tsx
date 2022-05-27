@@ -22,9 +22,10 @@ export const App = () => {
   return (
     <div className="App">
       <button onClick={onClickFetchData}>データ取得</button>
-      {todos.map((todo) => (
+      {todos.map((todo, i) => (
         // fix typo: userid -> userId
-        <Todo title={todo.title} userid={todo.userId} />
+        // add key prop by nf (it could be todo.id instead of i)
+        <Todo key={i} title={todo.title} userid={todo.userId} />
       ))}
     </div>
   );
