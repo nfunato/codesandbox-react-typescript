@@ -1,2 +1,2 @@
-# codesandbox-react-typescript
+# codesandbox-typescript
 Created with CodeSandbox
